@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Vinicius Marson Portfolio">
-    <meta name="keywords" content="Vinicius, Marson, Portfolio, Business">
+    <meta name="keywords" content="Vinicius, Marson, Portfolio, Business, Singu">
     <meta name="author" content="Vinicius Marson">
 
     <title>Vinicius Marson - Singu</title>
     <!-- Links to external resources -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="../../styles.css">
     <link rel="icon" href="../../assets/favicon.ico">
 </head>
@@ -24,17 +25,144 @@
         </div>
         <nav class="desktop-menu">
             <ul>
-                <li><a class="header__link" href="#home">Home</a></li>
-                <li><a class="header__link" href="#about">About</a></li>
-                <li><a class="header__link" href="#projects">Projects</a></li>
-                <li><a class="header__link" href="./assets/Resume.pdf" target="_blank">Resume</a></li>
+                <li><a class="header__link" href="../../index.html#home">Home</a></li>
+                <li><a class="header__link" href="../../index.html#about">About</a></li>
+                <li><a class="header__link" href="../../index.html#projects">Projects</a></li>
+                <li><a class="header__link" href="./../../assets/Resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        
+        <section class="about sec-pad">
+            <div class="main-container">
+                <div class="about__content">
+                    <div class="about__content-main">
+                        <img class="company-logo" src="../../assets/projects/singu/singu.svg" />
+                    </div>
+
+                    <div class="about__content-company">
+                        <h3 class="about__content-title">About the company</h3>
+                        <div class="about__content-details">
+                            <p class="about__content-details-para">
+                                Based in São Paulo, Brazil, Bluma (ex Singu) is a plataform to provide beauty and well-being services wherever you are, on your own time. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="responsabilities sec-pad">
+            <div class="main-container">
+                <div class="about__content">
+                    <div class="about__content-main">
+                        <img class="company-logo" src="../../assets/projects/singu/debora.jpeg" />
+                    </div>
+
+                    <div class="about__content-company">
+                        <h3 class="about__content-title">Responsabilities</h3>
+                        <div class="about__content-details">
+                            <p class="about__content-details-para">
+                                Led the team in implementing solutions to
+                                improve platform performance and stability of
+                                the Marketplace.
+                                
+                            </p>
+
+                            <p class="about__content-details-para">
+                                Optimized backend architecture for high
+                                traffic and peak load management.
+                            </p>
+
+                            <p class="about__content-details-para">
+                                Migrated the apps from native to hybrid,
+                                reducing the payroll cost of the team in 30%
+                                and also reducing the time to delivery as now
+                                the team cam focus in only 2 code bases in
+                                React Native instead of 4 native apps.
+                            </p>
+
+                            <div class="skills">
+                                <div class="skills__skill">React</div>
+                                <div class="skills__skill">React Native</div>
+                                <div class="skills__skill">Node JS</div>
+                                <div class="skills__skill">Mongo DB</div>
+                                <div class="skills__skill">Typescript</div>
+                                <div class="skills__skill">Cypress</div>
+                                <div class="skills__skill">Jest</div>
+                                <div class="skills__skill">Serverless Architecture</div>
+                                <div class="skills__skill">AWS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="output sec-pad">
+            <div class="main-container">
+                <div class="about__content">
+                    <div class="about__content-main">
+                        <img class="company-logo" src="../../assets/projects/singu/natura.png" />
+                    </div>
+
+                    <div class="about__content-company">
+                        <h3 class="about__content-title">Principal outcome</h3>
+                        <div class="about__content-details">
+                            <p class="about__content-details-para">
+                                As a partner, contributed to the strategic growth
+                                of the company and had a successful exit after
+                                the acquisition to Natura & Co.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="main-footer">
+        <div class="main-container">
+            <div class="main-footer__upper">
+                <div class="main-footer__row main-footer__row-1">
+                    <h2 class="heading heading-sm main-footer__heading-sm">
+                        <span>Social</span>
+                    </h2>
+                    <div class="main-footer__social-cont">
+                        <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/rammcodes">
+                            <img class="main-footer__icon" src="./../../assets/png/linkedin-ico.png"
+                                alt="Vinicius Marson Linkedin Profile">
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/rammcodes">
+                            <img class="main-footer__icon" src="./../../assets/png/github-ico.png"
+                                alt="RammCodes Github Profile">
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="https://dev.to/rammcodes">
+                            <img class="main-footer__icon" src="./../../assets/png/blog-ico.png"
+                                alt="RammCodes DEV.to Blog Profile">
+                        </a>
+                    </div>
+                </div>
+                <div class="main-footer__row main-footer__row-2">
+                    <h2 class="heading heading-sm text-lt">Vinicius Marson</h2>
+                    <p class="main-footer__short-desc">
+                        If you are here, it means you are looking for a highly qualified Software Engineer. Well, you
+                        finally found!
+                    </p>
+                </div>
+            </div>
+
+            <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+            <div class="main-footer__lower">
+                © Copyright
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                . Made by Vinicius Marson
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
