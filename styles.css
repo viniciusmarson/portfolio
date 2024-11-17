@@ -45,12 +45,10 @@ strong {
 
 .heading-primary {
     font-size: 4.5rem;
-
-    text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
     color: white;
-    font-weight: 800;
+    font-weight: 100;
 }
 
 @media only screen and (min-width: 870px) {
@@ -349,9 +347,17 @@ ul {
     justify-content: center;
 }
 
+#astronaut {
+    display: none;
+}
+
 @media only screen and (min-width: 870px) {
     .skills {
         justify-content: flex-start;
+    }
+
+    #astronaut {
+        display: block;
     }
 }
 
