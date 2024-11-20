@@ -2,6 +2,9 @@
 
 My Software Engineer potfolio with all the projects that I worked on.
 
+## Infra
+
+![Infra Architecture](./portfolio.drawio.png)
 
 ## Design
 
