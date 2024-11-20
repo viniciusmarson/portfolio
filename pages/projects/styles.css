@@ -1,7 +1,114 @@
 main {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .company-logo {
-    max-width: 100%;
+  max-width: 100%;
+}
+
+.code-container {
+    margin-top: 4rem;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 870px) {
+    .title  {
+        text-align: start;
+    }
+
+    .subtitle {
+        text-align: start;
+    }
+}
+
+
+/* Image galery */
+
+.gallery-container {
+    margin-top: 4rem;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  min-height: 350px;
+}
+ 
+div.gallery:hover {
+  border: 1px solid #777;
+}
+ 
+div.gallery img {
+  width: 100%;
+  height: auto;
+  min-height: 191px;
+}
+ 
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+ 
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+ 
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+ 
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+ 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Accordion */
+
+/* Style the buttons that are used to open and close the accordion panel */
+details {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    
+    font-size: 1.8rem;
+    color: var(--main-secondary-color);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+details:hover {
+    background-color: #ccc;
 }

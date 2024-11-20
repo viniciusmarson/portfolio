@@ -45,8 +45,20 @@ a {
     text-decoration: none;
 }
 
+a[rel="noreferrer"] {
+    transition: transform 250ms;
+}
+
+a[rel="noreferrer"]:hover {
+    transform: translateY(-5px);
+}
+
 strong {
     color: var(--main-action-color);
+}
+
+p::first-letter{
+    text-transform: uppercase;
 }
 
 /* Reusable css */
@@ -118,6 +130,11 @@ strong {
     border-radius: 5px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
     transition: transform .3s;
+}
+
+button.btn {
+    border: none;
+    cursor: pointer;
 }
 
 .btn--bg {
