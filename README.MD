@@ -6,7 +6,7 @@ URL: https://viniciusmarson.com
 
 ## Infra
 
-![Infra Architecture](./portfolio.drawio.png)
+![Infra Architecture](./design/portfolio.drawio.png)
 
 ## Design
 
