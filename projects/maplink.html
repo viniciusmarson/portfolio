@@ -5,31 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Vinicius Marson Portfolio">
-    <meta name="keywords" content="Vinicius, Marson, Portfolio, Business, Allowme">
+    <meta name="keywords" content="Vinicius, Marson, Portfolio, Business, Maplink">
     <meta name="author" content="Vinicius Marson">
 
-    <title>Vinicius Marson - Allowme</title>
+    <title>Vinicius Marson - Maplink</title>
     <!-- Links to external resources -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
-    <link rel="stylesheet" href="../../css/project.css">
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="icon" href="../../assets/icons/favicon.ico">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../assets/icons/favicon.ico">
 </head>
 
 <body>
     <header>
-        <a href="../../index.html#home" class="logo-container">
-            <img src="./../../assets/images/me.webp" class="logo-image" alt="Logo"  />
+        <a href="../index.html#home" class="logo-container">
+            <img src="./../assets/images/me.webp" class="logo-image" alt="Logo" />
             <span class="logo-text">Vinicius Marson</span>
         </a>
         <nav class="desktop-menu">
             <ul>
-                <li><a class="header__link" href="../../index.html#home">Home</a></li>
-                <li><a class="header__link" href="../../index.html#about">About</a></li>
-                <li><a class="header__link" href="../../index.html#projects">Projects</a></li>
-                <li><a class="header__link" href="./../../assets/docs/Resume.pdf" target="_blank"><i class="fa-regular fa-file"></i> Resume</a></li>
+                <li><a class="header__link" href="../index.html#home">Home</a></li>
+                <li><a class="header__link" href="../index.html#about">About</a></li>
+                <li><a class="header__link" href="../index.html#projects">Projects</a></li>
+                <li><a class="header__link" href="./../assets/docs/Resume.pdf" target="_blank"><i
+                            class="fa-regular fa-file"></i> Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -39,16 +40,16 @@
             <div class="main-container">
                 <div class="about__content">
                     <div class="about__content-main">
-                        <img class="company-logo" loading="lazy" alt="Company Logo" src="../../assets/images/projects/allowme/allowme.png" />
+                        <img class="company-logo" loading="lazy" alt="Company Logo"
+                            src="../assets/images/projects/maplink/maplink.svg" width="100%" />
                     </div>
 
                     <div class="about__content-company">
                         <h3 class="about__content-title">About the company</h3>
                         <div class="about__content-details">
                             <p class="about__content-details-para">
-                                Based in São Paulo, Brazil, Allowme is a product designed to enhance
-                                user authentication by collecting fingerprints
-                                during login attempts.
+                                Based in São Paulo, Brazil, Maplink is a multinational technology company with more than
+                                20 years of experience in the geolocation market.
                             </p>
                         </div>
                     </div>
@@ -60,33 +61,40 @@
             <div class="main-container">
                 <div class="about__content">
                     <div class="about__content-main">
-                        <img class="company-logo" loading="lazy" alt="Company Responsabilities" src="../../assets/images/projects/allowme/login-security.jpg" />
+                        <picture>
+                            <source media="(min-width:650px)" srcset="../assets/images/projects/maplink/route.png">
+                            <img class="company-logo" loading="lazy" alt="Company Responsabilities"
+                                src="../assets/images/projects/maplink/poi.svg" />
+                        </picture>
                     </div>
 
                     <div class="about__content-company">
                         <h3 class="about__content-title">Responsabilities</h3>
                         <div class="about__content-details">
                             <p class="about__content-details-para">
-                                Enhanced user authentication and security with Allowme, a product that collects user fingerprints during login attempts, improving fraud detection capabilities for clients.
+                                Successfully delivered over 10 projects for diverse clients, consistently meeting tight
+                                deadlines and exceeding client expectations.
+                            </p>
+                            <p class="about__content-details-para">
+                                Designed, developed, and maintained high-performance APIs for routing, geolocation, and
+                                reverse geolocation, leveraging TomTom and deCarta GIS systems, serving thousands of
+                                daily users.
                             </p>
 
                             <p class="about__content-details-para">
-                                Developed scalable backend systems to analyze login fraud probabilities, processing over 1 request per second using advanced security algorithms and fraud detection techniques.
+                                Launched the company’s first continuous integration and delivery (CI/CD) pipelines for
+                                REST and SOAP web services, reducing deployment time by 30% and enhancing system
+                                reliability.
                             </p>
 
-                            <p class="about__content-details-para">
-                                Built a robust back-office platform enabling clients to review and take action on flagged fraudulent transactions, increasing response efficiency and reducing fraud-related losses.
-                            </p>
 
                             <div class="skills">
                                 <div class="skills__skill">React</div>
-                                <div class="skills__skill">Golang</div>
-                                <div class="skills__skill">Mongo DB</div>
-                                <div class="skills__skill">Cypress</div>
+                                <div class="skills__skill">Node JS</div>
+                                <div class="skills__skill">C#</div>
+                                <div class="skills__skill">PostgreSQL</div>
                                 <div class="skills__skill">Jest</div>
-                                <div class="skills__skill">Serverless Architecture</div>
-                                <div class="skills__skill">AWS</div>
-                                <div class="skills__skill">Elastic Search</div>
+                                <div class="skills__skill">Jenkins</div>
                             </div>
                         </div>
                     </div>
@@ -98,29 +106,28 @@
             <div class="main-container">
                 <div class="about__content">
                     <div class="about__content-main">
-                        <img class="company-logo" loading="lazy" alt="Company outcome" src="../../assets/images/projects/allowme/architecture.webp" />
+                        <img class="company-logo" loading="lazy" alt="Company outcome"
+                            src="../assets/images/projects/maplink/excluded-zone.png" />
                     </div>
 
                     <div class="about__content-company">
                         <h3 class="about__content-title">Principal outcome</h3>
                         <div class="about__content-details">
                             <p class="about__content-details-para">
-                                Created and implemented a comprehensive AWS-based architecture that enabled our platform
-                                to operate with high scalability, security, and resilience. To support these efforts, I
-                                pursued and successfully passed the AWS Architect and Developer certifications, a key
-                                step in enhancing our company’s cloud capabilities and credibility. This accomplishment
-                                was instrumental in positioning us for AWS partnership status, a milestone that opened
-                                up new resources and benefits, and provided a substantial advantage in terms of
-                                technical support and industry recognition.
+                                Developed the "Excluded Zone" feature, a powerful tool that allows users to define
+                                specific areas on the map where routes are strictly prohibited from passing. This
+                                feature empowers users to establish non-navigable zones, enhancing control and
+                                customization in route planning. By simply designating restricted regions, users can
+                                ensure that generated routes will automatically avoid these areas, which is especially
+                                useful for applications in logistics, urban planning, and service delivery.
                             </p>
+
                             <p class="about__content-details-para">
-                                The AWS certifications empowered me to design infrastructure that not only met our
-                                current needs but also anticipated future demands. By leveraging AWS best practices, we
-                                were able to optimize performance, minimize costs, and improve the reliability of our
-                                platform—all of which contributed to a stronger, more scalable service for our users.
-                                These efforts not only helped us achieve technical excellence but also elevated our
-                                company’s standing in the industry, setting us apart as a trusted, AWS-backed solution
-                                provider.
+                                This feature not only added significant flexibility to the platform but also
+                                distinguished the company from competitors. It addressed real-world needs, such as
+                                avoiding
+                                high-traffic zones, hazardous areas, or restricted regions, ultimately optimizing route
+                                efficiency and safety for users.
                             </p>
                         </div>
                     </div>
@@ -138,15 +145,15 @@
                     </h2>
                     <div class="main-footer__social-cont">
                         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/vinicius-marson/">
-                            <img class="main-footer__icon" src="./../../assets/images/linkedin-ico.webp"
+                            <img class="main-footer__icon" src="./../assets/images/linkedin-ico.webp"
                                 alt="Vinicius Marson Linkedin Profile" loading="lazy">
                         </a>
                         <a target="_blank" rel="noreferrer" href="https://github.com/viniciusmarson">
-                            <img class="main-footer__icon" src="./../../assets/images/github-ico.webp"
+                            <img class="main-footer__icon" src="./../assets/images/github-ico.webp"
                                 alt="Vinicius Marson Github Profile" loading="lazy">
                         </a>
                         <a target="_blank" rel="noreferrer" href="https://viniciusmarson.medium.com">
-                            <img class="main-footer__icon" src="./../../assets/images/blog-ico.webp"
+                            <img class="main-footer__icon" src="./../assets/images/blog-ico.webp"
                                 alt="Vinicius Marson Blog Profile" loading="lazy">
                         </a>
                     </div>
