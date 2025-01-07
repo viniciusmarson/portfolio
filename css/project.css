@@ -7,8 +7,32 @@ main {
   align-self: center;
 }
 
+.content-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .code-container {
     margin-top: 4rem;
+}
+
+.design-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 10rem;
+}
+
+.architecture {
+  width: 90%;
+  height: auto;
+  align-self: center;
+}
+
+.mongodb { 
+  width: 70%;
 }
 
 .title {

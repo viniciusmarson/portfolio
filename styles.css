@@ -364,10 +364,9 @@ ul {
     margin-bottom: 3rem;
 }
 
-.about__content-details-para {
+.content-details {
     font-size: 1.8rem;
     color: var(--main-secondary-color);
-    max-width: 60rem;
     line-height: 1.7;
     margin-bottom: 1rem;
 }
@@ -376,6 +375,23 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.certifications {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.certifications img {
+    width: 100px;
+}
+
+@media only screen and (min-width: 870px) {
+    .certifications img {
+        width: 150px;
+    }
 }
 
 #astronaut {
