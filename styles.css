@@ -544,10 +544,6 @@ ul {
 
 /* Mobile Menu */
 
-header {
-    flex-wrap: wrap;
-}
-
 .mobile-menu-btn {
     display: flex;
     flex-direction: column;
@@ -583,9 +579,14 @@ header {
 
 .mobile-nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
-    border-top: 1px solid #eee;
     background: var(--main-primary-bg);
+    border-top: 1px solid #eee;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    z-index: 999;
 }
 
 .mobile-nav.open {
@@ -617,12 +618,22 @@ header {
 /* Contact */
 
 .contact {
-    background: var(--main-secondary-bg);
+    background: var(--main-primary-bg);
 }
 
 .contact-form {
-    max-width: 60rem;
+    max-width: 65rem;
     margin: 0 auto;
+    background: var(--main-secondary-bg);
+    padding: 4rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+@media only screen and (max-width: 870px) {
+    .contact-form {
+        padding: 2.5rem 2rem;
+    }
 }
 
 .contact-form__group {
@@ -631,28 +642,34 @@ header {
 
 .contact-form__input {
     width: 100%;
-    padding: 1.5rem 2rem;
+    padding: 1.4rem 1.8rem;
     font-size: 1.6rem;
     font-family: inherit;
-    border: 2px solid #eee;
-    border-radius: 5px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
     outline: none;
-    transition: border-color 0.3s;
+    transition: border-color 0.25s, box-shadow 0.25s;
     background: #fff;
     color: #333;
 }
 
+.contact-form__input::placeholder {
+    color: #aaa;
+}
+
 .contact-form__input:focus {
     border-color: var(--main-action-color);
+    box-shadow: 0 0 0 3px rgba(108, 108, 108, 0.12);
 }
 
 .contact-form__textarea {
     resize: vertical;
-    min-height: 12rem;
+    min-height: 14rem;
 }
 
 .contact-form__submit {
     text-align: center;
+    margin-top: 1rem;
 }
 
 
