@@ -110,6 +110,58 @@ div.desc {
   clear: both;
 }
 
+/* Achievement cards */
+
+.achievement-container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.achievement-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-top: 2rem;
+}
+
+.achievement-card {
+    flex: 0 1 26rem;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.13);
+}
+
+.achievement-card img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.achievement-card-info {
+    padding: 1.6rem 2rem;
+}
+
+/* Media grid override for project pages — center 1 or 2 cards */
+.media__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.media__card {
+    flex: 0 1 48rem;
+}
+
 /* Accordion */
 
 /* Style the buttons that are used to open and close the accordion panel */
