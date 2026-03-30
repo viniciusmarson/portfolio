@@ -12,7 +12,6 @@
     <!-- Links to external resources -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
     <link rel="stylesheet" href="../css/project.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../assets/icons/favicon.ico">
@@ -29,8 +28,22 @@
                 <li><a class="header__link" href="../index.html#home">Home</a></li>
                 <li><a class="header__link" href="../index.html#about">About</a></li>
                 <li><a class="header__link" href="../index.html#projects">Projects</a></li>
-                <li><a class="header__link" href="./../assets/docs/Resume.pdf" target="_blank"><i
-                            class="fa-regular fa-file"></i> Resume</a></li>
+                <li><a class="header__link" href="../index.html#contact">Contact</a></li>
+                <li><a class="header__link" href="./../assets/docs/Resume.pdf" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="13" height="16" fill="currentColor" style="vertical-align: -2px; margin-right: 3px;" aria-hidden="true"><path d="M0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg> Resume</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation" onclick="this.classList.toggle('open'); document.getElementById('mobile-nav').classList.toggle('open')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a class="header__link" href="../index.html#home">Home</a></li>
+                <li><a class="header__link" href="../index.html#about">About</a></li>
+                <li><a class="header__link" href="../index.html#projects">Projects</a></li>
+                <li><a class="header__link" href="../index.html#contact">Contact</a></li>
+                <li><a class="header__link" href="./../assets/docs/Resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -48,9 +61,7 @@
                         <h3 class="about__content-title">About the company</h3>
                         <div class="about__content-details">
                             <p class="content-details">
-                                Based in São Paulo, Brazil, Allowme is a product designed to enhance
-                                user authentication by collecting fingerprints
-                                during login attempts.
+                                Based in São Paulo, Brazil, Allowme is a fintech security product that strengthens user authentication by analyzing device fingerprints at login — enabling clients to detect and prevent fraud in real time before it causes damage.
                             </p>
                         </div>
                     </div>
@@ -62,12 +73,12 @@
             <div class="main-container">
                 <div class="about__content">
                     <div class="content-images">
-                        <img class="company-logo" loading="lazy" alt="Company Responsabilities"
+                        <img class="company-logo" loading="lazy" alt="Company Responsibilities"
                             src="../assets/images/projects/allowme/login-security.jpg" />
                     </div>
 
                     <div class="about__content-company">
-                        <h3 class="about__content-title">Responsabilities</h3>
+                        <h3 class="about__content-title">Responsibilities</h3>
                         <div class="about__content-details">
                             <p class="content-details">
                                 Enhanced user authentication and security with Allowme, a product that collects user
@@ -75,8 +86,7 @@
                             </p>
 
                             <p class="content-details">
-                                Developed scalable backend systems to analyze login fraud probabilities, processing over
-                                1 request per second using advanced security algorithms and fraud detection techniques.
+                                Developed scalable backend systems to analyze login fraud probabilities, processing thousands of requests per minute using advanced security algorithms and fraud detection techniques.
                             </p>
 
                             <p class="content-details">
@@ -113,22 +123,10 @@
                         <h3 class="about__content-title">Principal outcome</h3>
                         <div class="about__content-details">
                             <p class="content-details">
-                                Created and implemented a comprehensive AWS-based architecture that enabled our platform
-                                to operate with high scalability, security, and resilience. To support these efforts, I
-                                pursued and successfully passed the AWS Architect and Developer certifications, a key
-                                step in enhancing our company’s cloud capabilities and credibility. This accomplishment
-                                was instrumental in positioning us for AWS partnership status, a milestone that opened
-                                up new resources and benefits, and provided a substantial advantage in terms of
-                                technical support and industry recognition.
+                                Designed and implemented a production-grade AWS architecture that gave the platform the scalability, security, and resilience needed to process fraud signals at speed. To deepen our cloud capabilities, I pursued and passed both the AWS Solutions Architect and Developer Associate certifications — a move that directly positioned Allowme for AWS partnership status, unlocking technical support, co-sell benefits, and industry credibility.
                             </p>
                             <p class="content-details">
-                                The AWS certifications empowered me to design infrastructure that not only met our
-                                current needs but also anticipated future demands. By leveraging AWS best practices, we
-                                were able to optimize performance, minimize costs, and improve the reliability of our
-                                platform—all of which contributed to a stronger, more scalable service for our users.
-                                These efforts not only helped us achieve technical excellence but also elevated our
-                                company’s standing in the industry, setting us apart as a trusted, AWS-backed solution
-                                provider.
+                                By applying AWS best practices across the full stack — from serverless Lambda functions for fraud analysis to Elasticsearch for event indexing — we built a system that was both cost-efficient and highly reliable. This technical foundation supported the company’s growth and reinforced its standing as a trusted, AWS-backed security solution.
                             </p>
                         </div>
                     </div>
@@ -136,8 +134,7 @@
 
                 <div class="code-container">
                     <h3 class="title">Projects & Code Contributions</h3>
-                    <p class="subtitle">Discover the repositories highlighting the technical solutions and innovations I
-                        spearheaded during my time at Nomos.</p>
+                    <p class="subtitle">Discover the repositories highlighting the technical solutions and innovations I spearheaded during my time at Allowme.</p>
 
                     <details>
                         <summary>Go Expect</summary>
@@ -150,7 +147,7 @@
                     <details>
                         <summary>Auditd in Elastic Beanstalk</summary>
                         <p>This repo contains a Elastic Beanstalk extensions configuration to install and configure
-                            auditd inside a Beanstalk instace for security purpose. <a
+                            auditd inside a Beanstalk instance for security purpose. <a
                                 href="https://github.com/viniciusmarson/eb-auditd" target="_blank">Github</a></p>
                     </details>
 
@@ -184,19 +181,15 @@
                 <div class="main-footer__row main-footer__row-2">
                     <h2 class="heading heading-sm text-lt">Vinicius Marson</h2>
                     <p class="main-footer__short-desc">
-                        If you are here, it means you are looking for a highly qualified Software Engineer. Well, you
-                        finally found!
+                        10+ years building products that scale and teams that ship — from seed-stage startups to Coinbase. Let's build something great together.
                     </p>
                 </div>
             </div>
 
             <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
             <div class="main-footer__lower">
-                © Copyright
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>
-                . Made by Vinicius Marson
+                © Copyright <span id="copyright-year"></span>. Made by Vinicius Marson
+                <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
             </div>
         </div>
     </footer>
