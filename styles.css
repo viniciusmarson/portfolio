@@ -380,7 +380,6 @@ ul {
     width: 2rem;
     height: 2rem;
     object-fit: contain;
-    filter: brightness(0) invert(1);
 }
 
 /* Profile photo in hero */
