@@ -110,6 +110,58 @@ div.desc {
   clear: both;
 }
 
+/* Principal Outcomes */
+
+.outcome-section-title {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.outcome-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 870px) {
+    .outcome-item {
+        grid-template-columns: 1fr 2fr;
+        text-align: start;
+    }
+
+    .outcome-item--reverse {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .outcome-item--reverse .outcome-image {
+        order: 2;
+    }
+
+    .outcome-item--reverse .outcome-text {
+        order: 1;
+    }
+}
+
+.outcome-image img {
+    width: 100%;
+    max-width: 32rem;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+.outcome-label {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-primary-color);
+    margin-bottom: 1.2rem;
+}
+
 /* Achievement cards */
 
 .achievement-container {
