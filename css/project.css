@@ -202,7 +202,7 @@ div.desc {
     padding: 1.6rem 2rem;
 }
 
-/* Media grid override for project pages — center 1 or 2 cards */
+/* Media grid override for project pages: center 1 or 2 cards */
 .media__grid {
     display: flex;
     flex-wrap: wrap;
